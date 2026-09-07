@@ -28,6 +28,14 @@ Etter at løkken er ferdig, ligger den største verdien bakerst og kan returnere
 Metoden ombyttinger() bruker den samme algoritmen, men har i tillegg en teller som økes hver gang to verdier bytter plass. 
 Til slutt returneres antall ombyttinger.
 
+(a) Det blir n - 1 sammenligninger. Grunnen er at vi sammenligner hvert tall med tallet som kommer etter. Hvis tabellen har 5 tall, blir det derfor 4 sammenligninger.
+
+(b) Det blir færrest ombyttinger når tabellen allerede er sortert stigende, for eksempel {1, 2, 3, 4, 5}. Da er tallet til venstre aldri større enn tallet til høyre, og vi får derfor 0 ombyttinger.
+
+(c) Det blir flest ombyttinger når det største tallet ligger først i tabellen. Da må det største tallet bytte plass med hvert tall det møter på vei mot slutten. Det blir derfor n − 1 ombyttinger.
+
+(d) For å finne gjennomsnittlig antall ombyttinger kan vi teste metoden på mange tilfeldige tabeller. Da ser vi at gjennomsnittet følger formelen n - Hₙ, der Hₙ er summen 1 + 1/2 + 1/3 + ... + 1/n. Dette betyr at antall ombyttinger i gjennomsnitt blir litt mindre enn n.
+
 
 
 ### Oppgave 2
