@@ -74,18 +74,30 @@ public class Oblig1 {
     public static int antallUlikeUsortert(int[] a) {
         int antall = 0;
         for (int i = 0; i < a.length; i++) {
+            boolean verdiFunnet = false;
 
-            antall++;
-            for (int j = 0; j < i; i++) {
-              if (a[i]=[])
+            for (int j = 0; j < i; j++) {
+                if (a[i] ==a[j]){
+                    verdiFunnet=true;
 
-
+                }
+            }
+            if (!verdiFunnet){
+                antall++;
             }
         }
         return antall;
     }
     // Oppgave 4
-    public static void sorter(int[] a, int fra, int til) {throw new UnsupportedOperationException();}
+    public static void sorter(int[] a, int fra, int til) {
+        if (fra<0){
+            throw new IndexOutOfBoundsException("Tallet er negativt");
+        }
+        if (til>a.length){
+            throw new IndexOutOfBoundsException("Tallet er større enn tabellens lengde");
+
+        }
+    }
 
     // Oppgave 5
     public static void delsortering(int[] a) {throw new UnsupportedOperationException();}
