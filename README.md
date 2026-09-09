@@ -39,4 +39,5 @@ Til slutt returneres antall ombyttinger.
 
 
 ### Oppgave 2
-I oppgave 2 gikk vi frem ved å...
+I oppgave 2 gikk jeg frem ved og først lage en if-setning som sjekker om tabellen er tom, og hvis den er tom skal jeg returnere 0. 
+Videre opretter jeg en telle-variabel int antall som starter på 1. 
