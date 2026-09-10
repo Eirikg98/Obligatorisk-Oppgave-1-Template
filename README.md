@@ -6,7 +6,7 @@ Oppgaven er levert av følgende studenter:
 * ...
 
 ## Arbeidsfordeling
-Jeg har jobbet alene, så har gjort alle oppgavene selv. Det er 0,1,2,3,4,5,6 og 8. 
+Jeg har jobbet alene, så jeg har gjort alle oppgavene selv. Det er 0,1,2,3,4,5,6 og 8. 
 ## Oppgavebeskrivelser
 
 ### Oppgave 0
