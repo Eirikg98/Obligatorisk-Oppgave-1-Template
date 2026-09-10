@@ -78,7 +78,7 @@ Dette fortsetter så lenge begge strengene har tegn igjen.
 Hvis den ene strengen er lengre enn den andre, legges resten av tegnene fra denne strengen til slutt.
 Til slutt returneres den ferdig flettede strengen.
 
-## Oppgave 8b 
+### Oppgave 8b 
 
 I oppgave 8b skulle jeg flette sammen et vilkårlig antall strenger.
 Jeg starter med å finne lengden på den lengste strengen.
