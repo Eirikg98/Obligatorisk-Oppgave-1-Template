@@ -15,6 +15,22 @@ public class Oblig1 {
     }
 
     // Oppgave 1
+
+    /**
+     * (a) Det blir n - 1 sammenligninger, fordi hvert tall blir
+     * sammenlignet med tallet som kommer etter.
+     * <p>
+     * (b) Det blir færrest ombyttinger når tabellen allerede er
+     * sortert stigende. Da blir det 0 ombyttinger.
+     * <p>
+     * (c) Det blir flest ombyttinger når det største tallet ligger
+     * først. Da må det flyttes helt til slutten, og det blir
+     * n - 1 ombyttinger.
+     * <p>
+     * (d) Jeg testet ombyttinger() på forskjellige tilfeldige
+     * permutasjoner av tallene fra 1 til n. Gjennomsnittet følger
+     * formelen n - H_n, der H_n = 1 + 1/2 + 1/3 + ... + 1/n.
+     */
     public static int maks(int[] a) {
         if (a.length == 0) {
             throw new NoSuchElementException("Tabellen er tom");
@@ -197,7 +213,7 @@ public class Oblig1 {
 
     // Oppgave 6
     public static void rotasjon(char[] a) {
-// Tom tabell eller kun ett element trenger ingen rotasjon
+        // Tom tabell eller kun ett element trenger ingen rotasjon
         if (a.length <= 1) {
             return;
         }
@@ -216,21 +232,71 @@ public class Oblig1 {
     }
 
     // Oppgave 7
-    public static void rotasjon(char[] a, int k) {throw new UnsupportedOperationException();}
-
-    // Oppgave 8
-    public static String flett(String s, String t) {
-
+    public static void rotasjon(char[] a, int k) {
+        throw new UnsupportedOperationException();
     }
 
-    public static String flett(String... s) {throw new UnsupportedOperationException();}
+    // Oppgave 8a
+    public static String flett(String s, String t) {
+
+        String resultat = "";
+        int i = 0;
+
+        while (i < s.length() && i < t.length()) {
+            resultat += s.charAt(i);
+            resultat += t.charAt(i);
+            i++;
+        }
+
+        while (i < s.length()) {
+            resultat += s.charAt(i);
+            i++;
+        }
+
+        while (i < t.length()) {
+            resultat += t.charAt(i);
+            i++;
+        }
+
+        return resultat;
+    }
+
+
+    //Oppgave 8b
+    public static String flett(String... s) {
+        String resultat = "";
+        int lengste = 0;
+
+        for (int i = 0; i < s.length; i++) {
+            if (s[i].length() > lengste) {
+                lengste = s[i].length();
+            }
+        }
+
+        for (int j = 0; j < lengste; j++) {
+            for (int i = 0; i < s.length; i++) {
+                if (j < s[i].length()) {
+                    resultat += s[i].charAt(j);
+                }
+            }
+        }
+
+        return resultat;
+    }
+
 
     // Oppgave 9
-    public static int[] indeksSortering(int[] a) {throw new UnsupportedOperationException();}
+    public static int[] indeksSortering(int[] a) {
+        throw new UnsupportedOperationException();
+    }
 
     // Oppgave 10
-    public static int[] tredjeMin(int[] a) {throw new UnsupportedOperationException();}
+    public static int[] tredjeMin(int[] a) {
+        throw new UnsupportedOperationException();
+    }
 
     // Oppgave 11
-    public static boolean inneholdt(String a, String b) {throw new UnsupportedOperationException();}
+    public static boolean inneholdt(String a, String b) {
+        throw new UnsupportedOperationException();
+    }
 }
